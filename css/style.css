@@ -716,7 +716,6 @@ iframe {
 .reserve {
     height: 610px;
     width: auto;
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -840,7 +839,7 @@ footer p {
 
 /* レスポンシブデザイン */
 
-@media (max-width: 600px) {
+@media (max-width: 672px) {
 
     .full-width-img {
         margin: auto;
