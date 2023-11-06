@@ -1,0 +1,1143 @@
+@charset "UTF-8";
+
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, img, a,
+ol, ul, li,
+form, label,
+table, tbody, tfoot, thead, tr, th, td,
+article, footer, header, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    list-style: none;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* 共通 */
+
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+    color: #3A3A3A;
+}
+
+a:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* スライダーメインビジュアル*/
+.background-img {
+    height: 100vh;
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-container {
+    position: relative;
+}
+
+.top-text {
+    position: absolute;
+    font-size: 1.2em;
+    top: 394px;
+    left: 129px;
+    letter-spacing: 7.2px;
+    line-height: 2.8;
+    white-space: pre-line;
+}
+
+
+/* ヘッダー*/
+header .appear {
+    animation: fadeIn 1s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+}
+
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    margin-right: 20px;
+    font-size: 16px;
+    letter-spacing: 3.2px;
+}
+
+header ul li a {
+    color: #3a3a3a;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 190px;
+    height: 51px;
+    padding: 10px 32px;
+    font-size: 14px;
+    letter-spacing: 3.2px;
+    color: #3A3A3A;
+    border: 1px solid #3A3A3A;
+    background: transparent;
+    text-decoration: none;
+    border-radius: 30px;
+    display: block;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.button:hover {
+    background-color: rgba(251, 249, 238, 0.8);
+    cursor: pointer;
+}
+
+/* メインコンテンツ*/
+
+/* news*/
+.news .appear {
+    animation: fadeIn 1s;
+}
+
+.news {
+    height: 240px;
+    width: auto;
+    padding: 0 24px;
+}
+
+.news h3 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+}
+
+.news-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-contents p {
+    animation: appear 0.8s;
+    padding: 8px 9px;
+    margin: 0 13px 0 0;
+    border: 1px solid #3A3A3A;
+    background: transparent;
+    color: #3A3A3A;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 3.2px;
+}
+
+.news-contents a {
+    animation: appear 0.8s;
+    color: #3A3A3A;
+    font-size: 16px;
+    letter-spacing: 4.80px;
+}
+
+/* about*/
+.about .appear {
+    animation: fadeIn 1s;
+}
+
+.about {
+    background-image: url('/img/backgroud-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 870px;
+    width: auto;
+    padding: 0 24px;
+}
+
+.about h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+}
+
+.about-contents img {
+    width: auto;
+    height: auto;
+}
+
+.about-contents {
+    height: 186px;
+    width: 428px;
+    padding: 40px 0;
+    overflow: hidden;
+    /* box内にテキストを収める*/
+}
+
+.about-contents p {
+    font-size: 16px;
+    line-height: 50px;
+    letter-spacing: 4.80px;
+}
+
+
+/* style*/
+.style .appear {
+    animation: fadeIn 1s;
+}
+
+.style {
+    height: 1196px;
+    width: auto;
+    padding: 0 24px;
+}
+
+.style h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+}
+
+.style-container {
+    position: relative;
+    height: 150vh;
+}
+
+
+.img-1 {
+    position: absolute;
+    top: 41px;
+    left: 320px;
+    transition: 0.5s;
+}
+
+.img-1 img {
+    position: absolute;
+    display: block;
+}
+
+.img-1:hover img:nth-of-type(2) {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.img-2 {
+    position: absolute;
+    top: 227px;
+    left: 127px;
+    transition: 0.5s;
+}
+
+.img-2 img {
+    position: absolute;
+    display: block;
+}
+
+.img-2:hover img:nth-of-type(2) {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.img-3 {
+    position: absolute;
+    top: 384px;
+    left: 300px;
+    transition: 0.5s;
+}
+
+.img-3 img {
+    position: absolute;
+    display: block;
+}
+
+.img-3:hover img:nth-of-type(2) {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.img-4 {
+    position: absolute;
+    top: 384px;
+    left: 610px;
+    transition: 0.5s;
+}
+
+.img-4 img {
+    position: absolute;
+    display: block;
+}
+
+.img-4:hover img:nth-of-type(2) {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.img-5 {
+    position: absolute;
+    top: 555px;
+    left: 745px;
+    transition: 0.5s;
+}
+
+.img-5 img {
+    position: absolute;
+    display: block;
+}
+
+.img-5:hover img:nth-of-type(2) {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.img-6 {
+    position: absolute;
+    top: 264px;
+    left: 859px;
+    transition: 0.5s;
+}
+
+.img-6 img {
+    position: absolute;
+    display: block;
+}
+
+.img-6:hover img:nth-of-type(2) {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.img-7 {
+    position: absolute;
+    top: 10px;
+    left: 767px;
+    transition: 0.5s;
+}
+
+.img-7 img {
+    position: absolute;
+    display: block;
+}
+
+.img-7:hover img:nth-of-type(2) {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.img-8 {
+    position: absolute;
+    top: 190px;
+    left: 640px;
+    transition: 0.5s;
+}
+
+.img-8 img {
+    position: absolute;
+    display: block;
+}
+
+.img-8:hover img:nth-of-type(2) {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.style-button-container {
+    position: relative;
+}
+
+.style-button {
+    position: absolute;
+    top: 880px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 315px;
+    height: 51px;
+    padding: 10px 32px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 6px;
+    color: #3A3A3A;
+    border-radius: 30px;
+    border: 1px solid #3A3A3A;
+    background: transparent;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.style-button:hover {
+    background-color: rgba(251, 249, 238, 0.8);
+    cursor: pointer;
+}
+
+
+/* menu*/
+.menu .appear {
+    animation: fadeIn 1s;
+}
+
+.menu {
+    background-image: url('/img/menu-backgroundimg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    padding: 100px;
+}
+
+.menu h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+}
+
+.menulist-set {
+    flex: 1;
+    margin: 0 50px;
+}
+
+
+.menu p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 7.20px;
+    margin: 20px 0;
+}
+
+
+dl.menulist-1 {
+    width: 490px;
+    height: auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 4.80px;
+}
+
+/* divにflexをかけdtとddを左右に配置しつつ
+   position:relativeで点線配置の準備をする */
+dl.menulist-1 div {
+    position: relative;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+/* 疑似要素でオブジェクトを生成、positionでdivの上下中央に配置し
+   borderで点線を表現する */
+dl.menulist-1 div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+/* dtとddはz-indexで点線よりも手前にし、なおかつ背景色を付けて点線を隠す */
+dl.menulist-1 dt {
+    z-index: 2;
+    text-align: left;
+}
+
+dl.menulist-1 dd {
+    z-index: 2;
+    text-align: right;
+}
+
+.menu .notes {
+    text-align: center;
+    margin: 30px;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 25px;
+    letter-spacing: 4.20px;
+}
+
+
+
+/* collection*/
+.collection .appear {
+    animation: fadeIn 1s;
+}
+
+.collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 810px;
+    width: auto;
+}
+
+.collection h2 {
+    text-align: center;
+    margin: 50px 00;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+}
+
+.collection img {
+    margin: 50px 00;
+}
+
+.collection p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 7.20px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+/* staff */
+.staff .appear {
+    animation: fadeIn 1s;
+}
+
+.staff {
+    background-image: url('/img/staff-backgroundimg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    padding: 100px;
+}
+
+.staff-container {
+    display: flex;
+    justify-content: center;
+}
+
+.staff h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+}
+
+.staff-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.staff-wrap img {
+    max-width: 100%;
+    height: auto;
+    margin: 0px 130px;
+}
+
+.staff-wrap h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.staff-wrap p {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.staff-wrap button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* access */
+.access .appear {
+    animation: fadeIn 1s;
+}
+
+.access {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 952Px;
+    width: auto;
+}
+
+
+iframe {
+    flex-shrink: 0;
+    width: 1280px;
+    height: 420px;
+}
+
+
+.access h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+}
+
+.access p {
+    margin: 20px 0 0 0;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 4.80px;
+}
+
+.nearest-station {
+    margin: 20px 0 0 0;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 4.80px;
+}
+
+/* insta  */
+.insta .appear {
+    animation: fadeIn 1s;
+}
+
+.insta {
+    background-image: url('/img/insta-backgrond.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 520px;
+    width: auto;
+}
+
+.insta h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 4.80px;
+}
+
+.insta-button {
+    padding: 10px 32px;
+    width: 315px;
+    height: 51px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 6px;
+    color: #3A3A3A;
+    border-radius: 30px;
+    border: 1px solid #3A3A3A;
+    background: transparent;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.insta-button:hover {
+    background-color: rgba(251, 249, 238, 0.8);
+    cursor: pointer;
+}
+
+/* reserve  */
+.reserve .appear {
+    animation: fadeIn 1s;
+}
+
+.reserve {
+    height: 610px;
+    width: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserve-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reserve h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 4.80px;
+}
+
+.reserve p {
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 4.80px;
+}
+
+.reserve-button {
+    padding: 10px 32px;
+    margin: 30px;
+    width: 315px;
+    height: 51px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 6px;
+    color: #3A3A3A;
+    border-radius: 30px;
+    border: 1px solid #3A3A3A;
+    background: transparent;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.reserve-button:hover {
+    background-color: #FBF9EE;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    background-image: url('/img/fottter-backgrond.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 538px;
+    width: auto;
+}
+
+footer a {
+    margin: 30px;
+}
+
+footer p {
+    margin: 30px;
+    line-height: 30px;
+    letter-spacing: 4.80px;
+}
+
+
+.footer-copy {
+    position: absolute;
+    bottom: 0;
+    line-height: 30px;
+    letter-spacing: 4.80px;
+}
+
+/* 追従ボタン */
+.top-button a {
+    color: #333;
+    position: fixed;
+    bottom: 24px;
+    right: 80px;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    padding: 16px 20px;
+    text-align: right;
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+}
+
+.arrow1 {
+    width: 48px;
+    height: 1px;
+    background: #333;
+    position: absolute;
+    top: 50%;
+    right: 62px;
+}
+
+.arrow2 {
+    width: 1px;
+    height: 12px;
+    background: #333;
+    position: absolute;
+    top: calc(50% + 1px);
+    right: 109px;
+    transform: rotate(-130deg);
+    transform-origin: top left;
+}
+
+
+/* レスポンシブデザイン */
+
+@media (max-width: 600px) {
+
+    .full-width-img {
+        margin: auto;
+        width: 90%;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    p {
+        font-size: 14px;
+        font-family: 'Quicksand', sans-serif;
+        color: #3A3A3A;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        color: #3A3A3A;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-family: 'Quicksand', sans-serif;
+        color: #3A3A3A;
+    }
+
+    /* ヘッダー */
+    header .appear {
+        animation: fadeIn 1s;
+    }
+
+    .top-text {
+        position: absolute;
+        font-size: 1.2em;
+        top: 394px;
+        letter-spacing: 7.2px;
+        line-height: 2.8;
+        white-space: pre-line;
+    }
+
+    /* ハンバーガーメニュー */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .line {
+        width: 60px;
+        height: 1px;
+        background-color: black;
+        margin: 5px 0;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .hamburger-menu.active {
+        display: block;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo img {
+        margin: 0 40%;
+    }
+
+    .button {
+        width: 110px;
+        height: 60px;
+        padding: 9px 16px;
+        font-size: 14px;
+        letter-spacing: 3.2px;
+        color: #3A3A3A;
+        border: 1px solid #3A3A3A;
+        background: transparent;
+        text-decoration: none;
+        border-radius: 30px;
+        display: block;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        transition: background-color 1s;
+    }
+
+    .button:hover {
+        background-color: rgba(251, 249, 238, 0.8);
+        cursor: pointer;
+    }
+
+    /* アバウト */
+    .about-contents img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* スタイル */
+    .style-wrap {
+        position: relative;
+        height: 100vh;
+    }
+
+
+    .img-1 {
+        position: absolute;
+        top: 0%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        margin: 10px;
+        transition: 0.5s;
+    }
+
+    .img-1 img {
+        width: auto;
+        height: auto;
+    }
+
+    .img-1:hover img:nth-of-type(2) {
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .img-2 {
+        display: none;
+    }
+
+    .img-2 img {
+        display: none;
+    }
+
+    .img-2:hover img:nth-of-type(2) {
+        display: none;
+    }
+
+    .img-3 {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        margin: 10px;
+        transition: 0.5s;
+    }
+
+    .img-3 img {
+        width: auto;
+        height: auto;
+    }
+
+    .img-3:hover img:nth-of-type(2) {
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .img-4 {
+        display: none;
+    }
+
+    .img-4 img {
+        display: none;
+    }
+
+    .img-4:hover img:nth-of-type(2) {
+        display: none;
+    }
+
+    .img-5 {
+        display: none;
+    }
+
+    .img-5 img {
+        display: none;
+    }
+
+    .img-5:hover img:nth-of-type(2) {
+        display: none;
+    }
+
+    .img-6 {
+        position: absolute;
+        top: 100%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        margin: 10px;
+        transition: 0.5s;
+    }
+
+    .img-6 img {
+        width: auto;
+        height: auto;
+    }
+
+    .img-6:hover img:nth-of-type(2) {
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .img-7 {
+        display: none;
+    }
+
+    .img-7 img {
+        display: none;
+    }
+
+    .img-7:hover img:nth-of-type(2) {
+        display: none;
+    }
+
+    .img-8 {
+        display: none;
+    }
+
+    .img-8 img {
+        display: none;
+    }
+
+    .img-8:hover img:nth-of-type(2) {
+        display: none;
+    }
+
+    .style-button-container {
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 10px;
+    }
+
+    /* メニュー */
+    .menu-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menulist-set {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu p {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .menu dt {
+        text-align: center;
+    }
+
+    .menu dd {
+        text-align: center;
+    }
+
+    /* コレクション */
+
+    .collection img {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    /* スタッフ */
+    .staff {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .staff-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .staff-wrap {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    /* インスタ */
+    .insta h2 {
+        font-size: 24px;
+        line-height: 50px;
+        letter-spacing: 4.80px;
+    }
+
+
+}
