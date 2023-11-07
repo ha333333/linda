@@ -672,7 +672,7 @@ dl.menulist-1 dd {
 }
 
 .collection img {
-    margin: 50px 00;
+    margin: 50px 0;
 }
 
 .collection p {
@@ -680,7 +680,6 @@ dl.menulist-1 dd {
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 7.20px;
-    margin-top: 35px;
     text-align: center;
 }
 
