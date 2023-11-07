@@ -23,7 +23,12 @@ article, footer, header, menu, nav, section {
 /* 共通 */
 
 body {
-    margin: 0;
+    width: 100%;
+    /* デフォルトではコンテナを幅いっぱいに広げる */
+    max-width: 1280px;
+    /* 最大幅を設定 */
+    margin: 0 auto;
+    /* ページを中央に配置 */
     padding: 0px;
     font-family: 'Quicksand', sans-serif;
     color: #3A3A3A;
