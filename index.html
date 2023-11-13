@@ -124,7 +124,7 @@
         </div>
         </div>
         <div class="style-button-container">
-        <button onclick="location.href=``" class="style-button">MORE</button>
+        <button onclick="location.href=`#instagram`" class="style-button">MORE</button>
         </div>
         </div>
     </section>
@@ -273,7 +273,8 @@
         </div>
     </section>
 
-<!-- インスタ -->   
+<!-- インスタ -->  
+<div id="instagram"></div> <!-- ナビからリンク --> 
 <section class="instagram">
     <h2>最新のスタイルは<br>インスタグラムにて更新中。</h2>
     <a href="https://business.instagram.com/" target="_blank"><button class="instagram-button"f>INSTAGRAM
@@ -365,12 +366,12 @@ $(".slider").slick({
 // ハンバーガーメニュー    
 $(".open-btn1").click(function () {//ボタンがクリックされたら
   $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
-    $("#g-nav").toggleClass('panel-active');//ナビゲーションにpanelactiveクラスを付与
+    $("#g-nav").toggleClass('panel-active');//ナビゲーションにpanel-activeクラスを付与
 });
 
 $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
     $(".open-btn1").removeClass('active');//ボタンの activeクラスを除去し
-    $("#g-nav").removeClass('panel-active');//ナビゲーションのpanelactiveクラスも除去
+    $("#g-nav").removeClass('panel-active');//ナビゲーションのpanel-activeクラスも除去
 });
     });
 
