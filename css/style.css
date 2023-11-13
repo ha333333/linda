@@ -679,16 +679,100 @@ dl.menulist-1 dd {
     letter-spacing: 3.2px;
 }
 
-.collection-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* スライドを入れる箱 */
+.slider-wrapper {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 50px;
 }
 
-.collection img {
-    margin: 50px 0;
+.slider-item {
+    margin: 0 20px;
+    /* スライドの間隔をあける */
 }
+
+.slider-item img {
+    max-width: 100%;
+    /* スライドに入れる画像の幅をコンテナいっぱいとする */
+}
+
+/* 前へ・次への矢印のスタイル */
+.slide-arrow {
+    width: 15px;
+    height: 15px;
+    transition: transform 0.3s;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.slide-prev {
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
+    transform: rotate(-45deg);
+    left: -25px;
+}
+
+.slide-prev:hover {
+    transform: translateX(-3px) rotate(-45deg);
+}
+
+.slide-next {
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    transform: rotate(45deg);
+    right: -25px;
+}
+
+.slide-next:hover {
+    transform: translateX(3px) rotate(45deg);
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+/* ドットのスタイル */
+.slide-dots {
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    list-style: none;
+}
+
+.slide-dots li {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.slide-dots li button {
+    border: 0;
+    background: 0;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+}
+
+.slide-dots li button::before {
+    content: "●";
+    font-size: 5px;
+    color: #3A3A3A;
+}
+
+.slide-dots li.slick-active button::before {
+    content: "●";
+    cursor: pointer;
+    opacity: 0.6;
+}
+
 
 .collection p {
     font-size: 24px;
@@ -1247,9 +1331,20 @@ footer p {
 
     /* コレクション */
 
-    .collection img {
-        max-width: 100%;
-        height: 100%;
+    .slider-wrapper {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .slider-item {
+        margin: 0 10px;
+    }
+
+    /* その他スタイル */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
     /* スタッフ */

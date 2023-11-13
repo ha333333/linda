@@ -210,17 +210,21 @@
     <section class="collection">
         <div class="collection-wrap">
         <h2>COLLECTION</h2>
-        <div class="slider">
-        <div>
-        <img src="img/collection-img.jpg" alt="Image1">
-        </div>
-        <div>
-        <img src="img/collection-img.jpg" alt="Image2">
-        </div>
-        <div>
-        <img src="img/collection-img.jpg" alt="Image3">
-        </div>
-        </div>
+        <div class="slider-wrapper">
+
+            <!-- スライダー化する要素をこの中に並べる -->
+            <ul class="slider">
+              <li class="slider-item">
+                <img src="img/collection-img.jpg" alt="">
+              </li>
+              <li class="slider-item">
+                <img src="img/collection-img.jpg" alt="">
+              </li>
+              <li class="slider-item">
+                <img src="img/collection-img.jpg" alt="">
+              </li>
+            </ul>
+          </div>
         <p>2024<br>SUMMER COLLECTION</p>
         </div>
     </section>
@@ -319,13 +323,26 @@
     
     $(function(){
 // コレクションスライダー
-        $('.slider').slick({
-            dots: true,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            cssEase: 'linear'
-        });
+$(".slider").slick({
+    autoplay: true, // 自動でスライドを再生する
+    autoplaySpeed: 2000, // 自動再生の速度(ﾐﾘ秒)
+    arrows: true, // 前後の矢印を有効にする
+    prevArrow: "<button class='slide-prev slide-arrow'></button>", // 前へボタン
+    nextArrow: "<button class='slide-next slide-arrow'></button>", // 次へボタン
+    dots: true, // ドットナビゲーションを有効にする
+    dotsClass: "slide-dots", // ドットナビのクラス名を指定
+    responsive: [
+      // レスポンシブスタイルを指定
+      {
+        // 画面幅400px以下は、settingsプロパティ内のオプションに変更
+        breakpoint: 769,
+        settings: {
+          arrows: false, // 矢印を消す
+          centerMode: false // センターモードをやめる
+        }
+      }
+    ]
+  });
 // メインビジュアルスライダー
         $('.background-img').bgSwitcher({
             images: ['https://github.com/ha333333/linda/blob/main/img/main.jpg?raw=true','https://github.com/ha333333/linda/blob/main/img/slide2.jpg?raw=true','https://github.com/ha333333/linda/blob/main/img/slide3.jpg?raw=true','https://github.com/ha333333/linda/blob/main/img/slide4.jpg?raw=true'],
