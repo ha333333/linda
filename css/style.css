@@ -397,6 +397,12 @@ header ul li a {
     height: 150vh;
 }
 
+.style-wrap {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
 
 .img-1 {
     position: absolute;
@@ -1217,7 +1223,7 @@ footer p {
 
     .img-3 {
         position: absolute;
-        top: 50%;
+        top: 48%;
         left: 20%;
         transform: translate(-50%, -50%);
         margin: 10px;
@@ -1260,7 +1266,7 @@ footer p {
 
     .img-6 {
         position: absolute;
-        top: 100%;
+        top: 95%;
         left: 20%;
         transform: translate(-50%, -50%);
         margin: 10px;
