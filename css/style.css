@@ -88,12 +88,12 @@ body {
 }
 
 /*アクティブクラスがついたら位置を0に*/
-#g-nav.panelactive {
+#g-nav.panel-active {
     top: 0;
 }
 
 /*ナビゲーションの縦スクロール*/
-#g-nav.panelactive #g-nav-list {
+#g-nav.panel-active #g-nav-list {
     /*ナビの数が増えた場合縦スクロール*/
     position: fixed;
     z-index: 999;
@@ -139,7 +139,7 @@ body {
 }
 
 
-.openbtn1 {
+.open-btn1 {
     display: flex;
     justify-content: flex-start;
     z-index: 9999;
@@ -152,7 +152,7 @@ body {
 }
 
 /*×に変化*/
-.openbtn1 span {
+.open-btn1 span {
     position: fixed;
     transition: all .4s;
     width: 60px;
@@ -161,30 +161,30 @@ body {
     margin: 5px 0;
 }
 
-.openbtn1 span:nth-of-type(1) {
+.open-btn1 span:nth-of-type(1) {
     top: 40px;
 }
 
-.openbtn1 span:nth-of-type(2) {
+.open-btn1 span:nth-of-type(2) {
     top: 48px;
 }
 
-.openbtn1 span:nth-of-type(3) {
+.open-btn1 span:nth-of-type(3) {
     top: 56px;
 }
 
-.openbtn1.active span:nth-of-type(1) {
+.open-btn1.active span:nth-of-type(1) {
     top: 50px;
     left: 50px;
     transform: translateY(6px) rotate(-45deg);
     width: 10%;
 }
 
-.openbtn1.active span:nth-of-type(2) {
+.open-btn1.active span:nth-of-type(2) {
     opacity: 0;
 }
 
-.openbtn1.active span:nth-of-type(3) {
+.open-btn1.active span:nth-of-type(3) {
     top: 60px;
     left: 50px;
     transform: translateY(-6px) rotate(45deg);
@@ -666,6 +666,10 @@ dl.menulist-1 dd {
 }
 
 .collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 810px;
     width: 100%;
     padding: 0 24px;
@@ -1126,7 +1130,7 @@ footer p {
         padding: 20px;
     }
 
-    .openbtn1 {
+    .open-btn1 {
         display: flex;
         justify-content: flex-start;
     }
