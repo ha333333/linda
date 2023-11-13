@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,6 @@
     <p class="top-text">Journey to Your <br> Ideal Style. 
         Let's Find <br> Beauty Together.</p>
     </div>
-
 <!-- ヘッダー -->
 <header>
 <!-- ハンバーガーメニュー -->
@@ -33,7 +32,7 @@
         <span></span>
     </div>
     <nav id="g-nav">
-    <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+    <div id="g-nav-list">
     <ul>
       <ul class="hamburger-menu" id="hamburger-menu">
         <li><a href="#about">ABOUT</a></li>
@@ -54,7 +53,7 @@
         <li><a href="#access">ACCESS</a></li>
     </ul>
 <div class="button-container">
-    <button class="button">ご予約はこちら</button>
+    <a href="#reserve"><button class="button">ご予約はこちら</button></a>
 </div>
 </div>
 
@@ -235,7 +234,7 @@
             <p>Top stylist</p>
             <h3>fujikawa makoto</h3>
             <button type="button">
-                <a href="https://business.instagram.com/"><img src="img/insta-icon.png" alt="insta Button"></a>
+                <a href="https://business.instagram.com/"><img src="img/insta-icon.png" alt="instagram Button"></a>
             </button>
             </div>
             <div class="staff-wrap">
@@ -243,7 +242,7 @@
             <p>Stylist</p>
             <h3>tanaka yoko</h3>
             <button type="button">
-                <a href="https://business.instagram.com/"><img src="img/insta-icon.png" alt="insta Button"></a>
+                <a href="https://business.instagram.com/"><img src="img/insta-icon.png" alt="instagram Button"></a>
             </button>
             </div>
             <div class="staff-wrap">
@@ -251,7 +250,7 @@
             <p>Stylist</p>
             <h3>sasaki sayaka</h3>
             <button type="button">
-                <a href="https://business.instagram.com/"><img src="img/insta-icon.png" alt="insta Button"></a>
+                <a href="https://business.instagram.com/"><img src="img/insta-icon.png" alt="instagram Button"></a>
             </button>
             </div>
         </div>
@@ -271,19 +270,20 @@
     </section>
 
 <!-- インスタ -->   
-<section class="insta">
+<section class="instagram">
     <h2>最新のスタイルは<br>インスタグラムにて更新中。</h2>
-        <button onclick="location.href='https://business.instagram.com/'" class="insta-button">INSTAGRAM
-        <img src="img/popup-icon.png"></button>
+    <a href="https://business.instagram.com/" target="_blank"><button class="instagram-button"f>INSTAGRAM
+        <img src="img/popup-icon.png"></button></a>
 </section>
 
-<!-- リザーブ -->  
+<!-- リザーブ -->
+<div id="reserve"></div> <!-- ナビからリンク -->  
 <section class="reserve">
     <h2>RESERVE</h2>
     <div class="reserve-container">
         <p>ホットペッパーかお電話にてご予約受け付けております。</p>
-        <button onclick="location.href=`https://beauty.hotpepper.jp/svcSA/`" class="reserve-button">ご予約はこちら
-        <img src="img/popup-icon.png"></button>
+        <a href="https://beauty.hotpepper.jp/relax/" target="_blank"><button class="reserve-button">ご予約はこちら
+        <img src="img/popup-icon.png"></button></a>
         <p>Tel <span>03-0000-0000</span></p>
         <p>営業時間 10:00~19:00 水曜日定休</p>
         </div>
