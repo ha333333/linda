@@ -619,7 +619,7 @@ header ul li a {
 
 
 dl.menulist-1 {
-    width: 490px;
+    width: auto;
     height: auto;
     font-size: 16px;
     font-weight: 400;
@@ -693,7 +693,7 @@ dl.menulist-1 dd {
 
 /* スライドを入れる箱 */
 .slider-wrapper {
-    width: 700px;
+    width: 400px;
     max-width: 100%;
     margin: 0 auto;
     padding: 20px 50px;
