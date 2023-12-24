@@ -1213,7 +1213,6 @@ footer p {
     .button:hover {
         background-color: rgba(251, 249, 238);
         transition: all 0.3s ease-in-out;
-        animation: borderDisappear 0.5s forwards;
     }
 
     @keyframes borderDisappear {
