@@ -1084,7 +1084,6 @@ footer p {
     text-decoration: none;
     display: block;
     width: 100px;
-    padding: 16px 20px;
     text-align: right;
     transform: rotate(90deg);
     transform-origin: bottom right;
@@ -1443,6 +1442,7 @@ footer p {
         line-height: 50px;
         letter-spacing: 4.80px;
     }
+
 }
 
 @media screen and (min-width: 768px) {
