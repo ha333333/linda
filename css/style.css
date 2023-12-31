@@ -417,7 +417,7 @@ header ul li a {
 .img-1 {
     position: absolute;
     top: 41px;
-    left: 320px;
+    left: 200px;
     transition: 0.5s;
 }
 
@@ -434,7 +434,7 @@ header ul li a {
 .img-2 {
     position: absolute;
     top: 227px;
-    left: 127px;
+    left: 25px;
     transition: 0.5s;
 }
 
@@ -451,7 +451,7 @@ header ul li a {
 .img-3 {
     position: absolute;
     top: 384px;
-    left: 300px;
+    left: 200px;
     transition: 0.5s;
 }
 
@@ -468,7 +468,7 @@ header ul li a {
 .img-4 {
     position: absolute;
     top: 384px;
-    left: 610px;
+    left: 500px;
     transition: 0.5s;
 }
 
@@ -484,8 +484,8 @@ header ul li a {
 
 .img-5 {
     position: absolute;
-    top: 555px;
-    left: 745px;
+    top: 460px;
+    left: 1020px;
     transition: 0.5s;
 }
 
@@ -502,7 +502,7 @@ header ul li a {
 .img-6 {
     position: absolute;
     top: 264px;
-    left: 859px;
+    left: 700px;
     transition: 0.5s;
 }
 
@@ -518,8 +518,8 @@ header ul li a {
 
 .img-7 {
     position: absolute;
-    top: 10px;
-    left: 767px;
+    top: 180px;
+    left: 520px;
     transition: 0.5s;
 }
 
@@ -535,8 +535,8 @@ header ul li a {
 
 .img-8 {
     position: absolute;
-    top: 190px;
-    left: 640px;
+    top: 60px;
+    left: 900px;
     transition: 0.5s;
 }
 
@@ -1071,8 +1071,7 @@ footer p {
     position: absolute;
     font-size: 12px;
     bottom: 0;
-    line-height: 30px;
-    letter-spacing: 4.80px;
+
 }
 
 /* 追従ボタン */
@@ -1120,11 +1119,12 @@ footer p {
 @media (max-width: 980px) {
 
     body {
-        font-size: 1.6em;
+        width: 100%;
+        font-size: 14px;
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 2rem;
         /* 50px */
     }
 
@@ -1225,6 +1225,8 @@ footer p {
     /* アバウト */
 
     .about-contents p {
+        font-size: 14px;
+        letter-spacing: 3px;
         margin: 30px;
     }
 
@@ -1235,18 +1237,26 @@ footer p {
 
 
     /* スタイル */
+    .style-wrap {
+        margin: 0 auto;
+    }
+
     .style-wrap appear {
         position: relative;
+        width: 980px;
         height: 100vh;
+        margin: 0 auto;
+    }
+
+    img-1:last-child {
+        margin-bottom: 0;
     }
 
     .img-1 {
         position: absolute;
         display: block;
-        top: 0%;
-        left: 10%;
+        left: 40px;
         transform: translate(-50%, -50%);
-        margin: 10px;
         transition: 0.5s;
     }
 
@@ -1272,13 +1282,16 @@ footer p {
         display: none;
     }
 
+    img-2:last-child {
+        margin-bottom: 0;
+    }
+
     .img-3 {
         position: absolute;
         display: block;
-        top: 23%;
-        left: 10%;
+        left: 40px;
+        top: 360px;
         transform: translate(-50%, -50%);
-        margin: 10px;
         transition: 0.5s;
     }
 
@@ -1316,13 +1329,16 @@ footer p {
         display: none;
     }
 
+    img-6:last-child {
+        margin-bottom: 0;
+    }
+
     .img-6 {
         position: absolute;
         display: block;
-        top: 45%;
-        left: 10%;
+        left: 40px;
+        top: 690px;
         transform: translate(-50%, -50%);
-        margin: 10px;
         transition: 0.5s;
     }
 
@@ -1397,7 +1413,6 @@ footer p {
 
     .slider-wrapper {
         margin: 0;
-        padding: 10px;
     }
 
     .slider-item {
@@ -1441,6 +1456,22 @@ footer p {
         font-size: 24px;
         line-height: 50px;
         letter-spacing: 4.80px;
+    }
+
+    .access p {
+        font-size: 14px;
+    }
+
+    .reserve p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .footer-copy {
+        font-size: 10px;
     }
 
 }
